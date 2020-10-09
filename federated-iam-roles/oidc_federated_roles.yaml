@@ -41,7 +41,7 @@ Resources:
                 auth.mozilla.auth0.com/:aud: N7lULzWtfVUDGymwDs0yDEq6ZcwmFazj
               ForAnyValue:StringEquals:
                 auth.mozilla.auth0.com/:amr:
-                  - aws_320464205386_read
+                  - aws_320464205386_read_only
       ManagedPolicyArns:
         - arn:aws:iam::aws:policy/ReadOnlyAccess
       MaxSessionDuration: 43200  # 12 hours
@@ -62,7 +62,7 @@ Resources:
                 auth.mozilla.auth0.com/:aud: N7lULzWtfVUDGymwDs0yDEq6ZcwmFazj
               ForAnyValue:StringEquals:
                 auth.mozilla.auth0.com/:amr:
-                  - aws_320464205386_read
+                  - aws_320464205386_read_only
       ManagedPolicyArns:
         - arn:aws:iam::aws:policy/job-function/ViewOnlyAccess
       MaxSessionDuration: 43200  # 12 hours
