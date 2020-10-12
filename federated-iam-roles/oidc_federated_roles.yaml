@@ -42,6 +42,7 @@ Resources:
               ForAnyValue:StringEquals:
                 auth.mozilla.auth0.com/:amr:
                   - aws_320464205386_read_only
+                  - aws_320464205386_admin
       ManagedPolicyArns:
         - arn:aws:iam::aws:policy/ReadOnlyAccess
       MaxSessionDuration: 43200  # 12 hours
@@ -63,6 +64,7 @@ Resources:
               ForAnyValue:StringEquals:
                 auth.mozilla.auth0.com/:amr:
                   - aws_320464205386_read_only
+                  - aws_320464205386_admin
       ManagedPolicyArns:
         - arn:aws:iam::aws:policy/job-function/ViewOnlyAccess
       MaxSessionDuration: 43200  # 12 hours
